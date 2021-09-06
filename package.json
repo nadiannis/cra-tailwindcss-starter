@@ -1,7 +1,27 @@
 {
-  "name": "community-platform-frontend",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cra-tailwindcss-starter",
+  "description": "Create React App + Tailwind CSS starter project.",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react.js",
+    "create react app",
+    "tailwind",
+    "tailwindcss",
+    "tailwind css"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "prepare": "husky install"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -11,17 +31,15 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "lint-staged": {
+    "*.{js,jsx}": "yarn lint:fix",
+    "*.{js,jsx,json,css,md}": "yarn prettier:fix"
   },
   "browserslist": {
     "production": [
