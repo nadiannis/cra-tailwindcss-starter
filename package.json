@@ -39,6 +39,7 @@
     "lint-staged": "^11.1.2",
     "postcss": "7",
     "prettier": "^2.3.2",
+    "stylelint-config-recommended": "^5.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "lint-staged": {
