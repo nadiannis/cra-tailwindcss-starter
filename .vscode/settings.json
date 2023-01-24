@@ -8,5 +8,5 @@
   },
   "css.validate": false,
   "scss.validate": false,
-  "stylint.enable": true
+  "stylelint.enable": true
 }
